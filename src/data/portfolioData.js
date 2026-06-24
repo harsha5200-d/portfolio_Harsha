@@ -68,60 +68,19 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    id: "ai-learning-platform",
-    title: "AI-Powered Learning Platform",
-    description: "Developed a full-stack AI study platform using React, Node.js, Express, MongoDB, and LLMs, enabling PDF-based question answering, concept explanation, document processing, and personalized learning support.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "AI / LLMs"],
+    id: "postgram",
+    title: "Postgram",
+    description: "Full-stack social media platform with authentication, feed, and image sharing.",
+    tech: ["Flask", "MongoDB", "JavaScript", "Cloudinary"],
     features: [
-      "PDF-based question answering with vector embedding search",
-      "Dynamic concept explanations with multiple difficulty levels",
-      "Personalized learning suggestions based on user progress",
-      "Secure document upload and chunk-based processing"
+      "User authentication and secure session management",
+      "Dynamic global activity feed with real-time post updates",
+      "Robust image uploading integration using Cloudinary CDN",
+      "Modern responsive user interface with interaction states"
     ],
-    github: "https://github.com/hreshavena/ai-learning-platform",
-    demo: "https://ai-learning-demo.example.com"
-  },
-  {
-    id: "interview-report-genai",
-    title: "Interview Report GenAI",
-    description: "Developed a full-stack AI interview assistant using React, Node.js, Express, MongoDB, and Google Gemini AI. Enabled resume parsing, interview plan generation, PDF export, user authentication, and cloud deployment using Vercel and Render.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini AI", "JWT"],
-    features: [
-      "Automated resume parsing to match candidate profiles",
-      "Dynamic interview plan and question generation using Gemini AI",
-      "Downloadable and shareable PDF reports of candidate performance",
-      "Full authentication flow (sign up, sign in, protected history)"
-    ],
-    github: "https://github.com/hreshavena/interview-report-genai",
-    demo: "https://interview-report-genai.example.com"
-  },
-  {
-    id: "backend-ledger-system",
-    title: "Backend Ledger System",
-    description: "Secure backend system built with Node.js, Express, and MongoDB featuring user authentication using JWT, bcrypt, and dotenv. It includes login/register APIs with protected routes and scalable architecture for ledger or transaction-based applications.",
-    tech: ["Node.js", "Express.js", "MongoDB", "JWT", "Bcrypt", "Dotenv"],
-    features: [
-      "JWT-based user authentication and route protection middleware",
-      "Secure password hashing utilizing bcrypt with configurable salt rounds",
-      "Scalable database architecture for ledger and transactions",
-      "Comprehensive API documentation and unit-test configuration"
-    ],
-    github: "https://github.com/hreshavena/backend-ledger",
-    demo: "https://backend-ledger-demo.example.com"
-  },
-  {
-    id: "image-editor-web-app",
-    title: "Image Editor Web Application",
-    description: "Developed a client-side image editor using HTML5 Canvas and vanilla JavaScript, enabling real-time image filtering (brightness, contrast, saturation, blur, grayscale, sepia, etc.), preset effects, image reset, and export functionality.",
-    tech: ["HTML5 Canvas", "CSS3", "JavaScript (ES6)"],
-    features: [
-      "High-performance real-time pixel editing using HTML5 Canvas context",
-      "Rich adjustments: brightness, contrast, saturation, blur, sepia, grayscale",
-      "One-click preset filter effects (vintage, cool, dramatic warmth)",
-      "Secure local file save/export of the modified canvas image"
-    ],
-    github: "https://github.com/hreshavena/image-editor-js",
-    demo: "https://image-editor-demo.example.com"
+    github: "https://github.com/harsha5200-d/postgram",
+    demo: "https://postgram-lac-omega.vercel.app/feed-postgram",
+    image: "./images/postgram.png"
   }
 ];
 

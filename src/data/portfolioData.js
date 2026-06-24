@@ -126,6 +126,21 @@ export const projectsData = [
     github: "https://github.com/harsha5200-d/kannban1",
     demo: "https://harsha5200-d.github.io/kannban1/",
     image: "./images/kanban.png"
+  },
+  {
+    id: "image-editor",
+    title: "Image Editor",
+    description: "Browser-based image editor with filters and transformations.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Real-time filter applications (brightness, contrast, saturation, blur, grayscale, sepia)",
+      "Interactive image canvas cropping, resizing, and rotation transformations",
+      "Dynamic file import and secure client-side download/export",
+      "Clean vanilla JavaScript custom UI implementation"
+    ],
+    github: "https://github.com/harsha5200-d/Image_Editor",
+    demo: "https://harsha5200-d.github.io/Image_Editor/",
+    image: "./images/image-editor.png"
   }
 ];
 

@@ -111,6 +111,21 @@ export const projectsData = [
     github: "https://github.com/harsha5200-d/BACKEND-LEDGER",
     demo: "https://backend-ledger-94h2.onrender.com",
     image: "./images/backend-ledger.png"
+  },
+  {
+    id: "kanban-board",
+    title: "Kanban Board",
+    description: "Drag-and-drop task management system for productivity tracking.",
+    tech: ["React", "Node.js", "MongoDB"],
+    features: [
+      "Dynamic drag-and-drop interface for managing task lifecycle states",
+      "Robust user workspace modeling and task assignment",
+      "Automatic real-time workspace persistence via MongoDB",
+      "Optimized rendering using functional React components"
+    ],
+    github: "https://github.com/harsha5200-d/kannban1",
+    demo: "https://harsha5200-d.github.io/kannban1/",
+    image: "./images/kanban.png"
   }
 ];
 

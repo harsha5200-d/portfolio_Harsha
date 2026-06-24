@@ -96,6 +96,21 @@ export const projectsData = [
     github: "https://github.com/harsha5200-d/Ai-powered-learning",
     demo: "https://ai-powered-learning-tau.vercel.app/",
     image: "./images/ai-learning.png"
+  },
+  {
+    id: "backend-ledger",
+    title: "Backend Ledger",
+    description: "Expense tracker with secure APIs and financial analytics system.",
+    tech: ["Node.js", "Express", "MongoDB"],
+    features: [
+      "Secure expense tracking with custom ledger groups",
+      "Robust financial analytics and metrics visualization",
+      "Restricted routes guarded by JWT-based user authentication",
+      "High performance MongoDB query design"
+    ],
+    github: "https://github.com/harsha5200-d/BACKEND-LEDGER",
+    demo: "https://backend-ledger-94h2.onrender.com",
+    image: "./images/backend-ledger.png"
   }
 ];
 

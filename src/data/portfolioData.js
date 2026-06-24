@@ -141,6 +141,21 @@ export const projectsData = [
     github: "https://github.com/harsha5200-d/Image_Editor",
     demo: "https://harsha5200-d.github.io/Image_Editor/",
     image: "./images/image-editor.png"
+  },
+  {
+    id: "snake-game",
+    title: "Snake Game",
+    description: "Classic snake game with score tracking and smooth gameplay.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Classic grid-based collision mechanics and game loop controls",
+      "Dynamic score tracking system using local storage",
+      "Smooth control responsiveness using keyboard event handlers",
+      "Clean visual interface design and responsive layouts"
+    ],
+    github: "https://github.com/harsha5200-d/SnakeGame1010",
+    demo: "https://harsha5200-d.github.io/SnakeGame1010/",
+    image: "./images/snake-game.png"
   }
 ];
 

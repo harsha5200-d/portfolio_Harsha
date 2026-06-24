@@ -81,6 +81,21 @@ export const projectsData = [
     github: "https://github.com/harsha5200-d/postgram",
     demo: "https://postgram-lac-omega.vercel.app/feed-postgram",
     image: "./images/postgram.png"
+  },
+  {
+    id: "studyq-ai-learning",
+    title: "StudyQ AI Learning",
+    description: "AI-powered platform for quizzes, notes, and personalized learning assistance.",
+    tech: ["React", "Node.js", "MongoDB", "Gemini AI"],
+    features: [
+      "AI-powered dynamically generated quizzes and grading",
+      "Centralized smart notes organizer with AI explanation assistants",
+      "Interactive personalized learning path tracking",
+      "Integrated Google Gemini LLM API client"
+    ],
+    github: "https://github.com/harsha5200-d/Ai-powered-learning",
+    demo: "https://ai-powered-learning-tau.vercel.app/",
+    image: "./images/ai-learning.png"
   }
 ];
 

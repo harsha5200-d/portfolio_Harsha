@@ -99,6 +99,19 @@ const Projects = () => {
                   whileHover={{ y: -6 }}
                   className="group rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 shadow-md flex flex-col justify-between overflow-hidden hover:shadow-xl transition-all duration-300"
                 >
+                  {project.image && (
+                    <div className="h-48 w-full overflow-hidden border-b border-slate-150/40 dark:border-slate-800/80 bg-slate-100 dark:bg-slate-950">
+                      <img 
+                        src={project.image} 
+                        alt={project.title} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        onError={(e) => {
+                          // Failback if image path is not found locally
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
                   <div className="p-6 md:p-8">
                     {/* Header */}
                     <div className="flex justify-between items-start gap-4">

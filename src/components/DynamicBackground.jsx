@@ -124,8 +124,8 @@ const DynamicBackground = () => {
           />
         </motion.div>
       ) : (
-        /* Sunny Cloud Theme */
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-100 via-sky-50 to-blue-50/50">
+        /* Sunny Blue Sky Theme */
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-300 via-sky-100 to-blue-50/30">
           {/* Ambient Sunny Sky Glow */}
           <div className="absolute top-[-5vw] right-[-5vw] w-[50vw] h-[50vw] bg-amber-250/15 rounded-full blur-[90px]" />
           

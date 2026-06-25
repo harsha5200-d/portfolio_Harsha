@@ -78,10 +78,6 @@ const Hero = () => {
     >
       {/* Dynamic Grid Background with Glow effects */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        {/* Radial Gradients */}
-        <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-[500px] md:h-[500px] bg-blue-400/20 dark:bg-blue-600/10 rounded-full blur-[80px] md:blur-[120px] transition-colors duration-300" />
-        <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-72 h-72 md:w-[500px] md:h-[500px] bg-purple-400/20 dark:bg-purple-600/10 rounded-full blur-[80px] md:blur-[120px] transition-colors duration-300" />
-        
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 dark:opacity-40 transition-colors duration-300" />
       </div>

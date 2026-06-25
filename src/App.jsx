@@ -5,12 +5,14 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ResumePage from './pages/ResumePage';
 import { ThemeProvider } from './context/ThemeContext';
+import DynamicBackground from './components/DynamicBackground';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
+        <DynamicBackground />
+        <div className="flex flex-col min-h-screen bg-transparent text-slate-900 dark:text-slate-50 transition-colors duration-300">
           {/* Global navigation navbar (hidden during printing) */}
           <Navbar />
           

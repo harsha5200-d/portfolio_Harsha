@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
   
@@ -110,3 +112,14 @@ html {
     page-break-inside: avoid !important;
   }
 }
+
+/* Blinking cursor for typewriter effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: currentColor }
+}
+
+.animate-caret {
+  animation: blink-caret 0.8s step-end infinite;
+}
+

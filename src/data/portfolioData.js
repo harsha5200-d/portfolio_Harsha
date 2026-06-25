@@ -1,3 +1,10 @@
+import postgramImg from '../assets/postgram.png';
+import aiLearningImg from '../assets/ai-learning.png';
+import backendLedgerImg from '../assets/backend-ledger.png';
+import kanbanImg from '../assets/kanban.png';
+import imageEditorImg from '../assets/image-editor.png';
+import snakeGameImg from '../assets/snake-game.png';
+
 export const personalInfo = {
   name: "Harsha Vardhan Reshavena",
   role: "B.Tech 4th Year Student | Full Stack Developer | AI Enthusiast",
@@ -6,12 +13,12 @@ export const personalInfo = {
   location: "Hyderabad, Telangana, IN",
   summary: "B.Tech 4th-year Computer Science student skilled in web development using React.js, JavaScript, Express, Node.js, and MongoDB. Strong understanding of Data Structures and Algorithms with hands-on project experience. Passionate about learning new technologies and building real-world applications.",
   socials: {
-    github: "https://github.com/hreshavena", // sample/placeholder links that can be replaced
-    linkedin: "https://linkedin.com/in/hreshavena",
-    leetcode: "https://leetcode.com/u/hreshavena",
-    geeksforgeeks: "https://geeksforgeeks.org/user/hreshavena",
-    hackerrank: "https://hackerrank.com/profile/hreshavena",
-    codechef: "https://codechef.com/users/hreshavena"
+    github: "https://github.com/harsha5200-d",
+    linkedin: "https://linkedin.com/in/harsha-vardhan-reshavena-0a4b13376/",
+    leetcode: "https://leetcode.com/u/rharshavardhan205/",
+    geeksforgeeks: "https://www.geeksforgeeks.org/profile/hresha4yj1",
+    hackerrank: "https://www.hackerrank.com/profile/hreshavena",
+    codechef: "https://www.codechef.com/users/hreshavena2345"
   }
 };
 
@@ -80,7 +87,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/postgram",
     demo: "https://postgram-lac-omega.vercel.app/feed-postgram",
-    image: "./images/postgram.png"
+    image: postgramImg
   },
   {
     id: "studyq-ai-learning",
@@ -95,7 +102,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/Ai-powered-learning",
     demo: "https://ai-powered-learning-tau.vercel.app/",
-    image: "./images/ai-learning.png"
+    image: aiLearningImg
   },
   {
     id: "backend-ledger",
@@ -110,7 +117,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/BACKEND-LEDGER",
     demo: "https://backend-ledger-94h2.onrender.com",
-    image: "./images/backend-ledger.png"
+    image: backendLedgerImg
   },
   {
     id: "kanban-board",
@@ -125,7 +132,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/kannban1",
     demo: "https://harsha5200-d.github.io/kannban1/",
-    image: "./images/kanban.png"
+    image: kanbanImg
   },
   {
     id: "image-editor",
@@ -140,7 +147,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/Image_Editor",
     demo: "https://harsha5200-d.github.io/Image_Editor/",
-    image: "./images/image-editor.png"
+    image: imageEditorImg
   },
   {
     id: "snake-game",
@@ -155,7 +162,7 @@ export const projectsData = [
     ],
     github: "https://github.com/harsha5200-d/SnakeGame1010",
     demo: "https://harsha5200-d.github.io/SnakeGame1010/",
-    image: "./images/snake-game.png"
+    image: snakeGameImg
   }
 ];
 
@@ -182,26 +189,31 @@ export const certificationsData = [
   {
     title: "Python (Basic) Certificate",
     issuer: "HackerRank",
-    description: "Awarded for successfully completing the HackerRank Python (Basic) certification challenge, testing core control flow, data types, and script building."
+    description: "Awarded for successfully completing the HackerRank Python (Basic) certification challenge, testing core control flow, data types, and script building.",
+    url: "https://www.hackerrank.com/certificates/a007ec0ab5e6"
   },
   {
     title: "Java Programming Certification",
     issuer: "CodeChef",
-    description: "Achieved a certificate for demonstrating proficiency in Java programming fundamentals, OOP concepts, exception handling, and collections."
+    description: "Achieved a certificate for demonstrating proficiency in Java programming fundamentals, OOP concepts, exception handling, and collections.",
+    url: "https://www.codechef.com/certificates/preview/8c0a2af"
   },
   {
     title: "SQL Certification",
     issuer: "HackerRank",
-    description: "Certified for writing relational database queries, subqueries, complex joins, aggregation, and structure definition."
+    description: "Certified for writing relational database queries, subqueries, complex joins, aggregation, and structure definition.",
+    url: "https://www.hackerrank.com/profile/hreshavena"
   },
   {
     title: "Python Bootcamp – 100 Days of Code",
     issuer: "Udemy",
-    description: "Comprehensive development course covering object-oriented programming, file systems, API consumption, data analysis, web scraping, and app deployment."
+    description: "Comprehensive development course covering object-oriented programming, file systems, API consumption, data analysis, web scraping, and app deployment.",
+    url: "https://www.udemy.com/course/100-days-of-code/learn/lecture/21730030?start=0#overview"
   },
   {
     title: "Problem Solving in C",
     issuer: "CodeChef",
-    description: "Demonstrated algorithms design, array manipulation, and memory management using C programming."
+    description: "Demonstrated algorithms design, array manipulation, and memory management using C programming.",
+    url: "https://www.codechef.com/users/hreshavena2345"
   }
 ];

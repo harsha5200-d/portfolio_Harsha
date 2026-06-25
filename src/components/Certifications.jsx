@@ -89,10 +89,21 @@ const Certifications = () => {
               {/* Verify Badge / Action */}
               <div className="mt-5 pt-3 border-t border-slate-100 dark:border-slate-850/60 flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-450 dark:text-slate-500">
                 <span>Credential ID: Verified</span>
-                <span className="flex items-center gap-1 text-blue-600 dark:text-blue-450">
-                  <span>Verify</span>
-                  <FaExternalLinkAlt className="text-[9px]" />
-                </span>
+                {cert.url ? (
+                  <a 
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-blue-600 dark:text-blue-450 hover:text-blue-700 dark:hover:text-blue-300 transition-colors cursor-pointer"
+                  >
+                    <span>Verify</span>
+                    <FaExternalLinkAlt className="text-[9px]" />
+                  </a>
+                ) : (
+                  <span className="flex items-center gap-1 text-slate-400 dark:text-slate-650">
+                    <span>Verified</span>
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}

@@ -1,10 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaDownload, FaEnvelope, FaCode } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolioData';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  const roles = ["B.Tech 4th Year Student", "Full Stack Developer", "AI Enthusiast"];
+  const [currentRoleIdx, setCurrentRoleIdx] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(100);
+
+  useEffect(() => {
+    let timer;
+    const activeRole = roles[currentRoleIdx];
+
+    if (!isDeleting) {
+      timer = setTimeout(() => {
+        setCurrentText(activeRole.slice(0, currentText.length + 1));
+        setTypingSpeed(100);
+      }, typingSpeed);
+
+      if (currentText === activeRole) {
+        timer = setTimeout(() => {
+          setIsDeleting(true);
+        }, 1500);
+      }
+    } else {
+      timer = setTimeout(() => {
+        setCurrentText(activeRole.slice(0, currentText.length - 1));
+        setTypingSpeed(50);
+      }, typingSpeed);
+
+      if (currentText === '') {
+        setIsDeleting(false);
+        setCurrentRoleIdx((prev) => (prev + 1) % roles.length);
+      }
+    }
+
+    return () => clearTimeout(timer);
+  }, [currentText, isDeleting, currentRoleIdx]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -87,9 +123,12 @@ const Hero = () => {
           {/* Title / Role */}
           <motion.h2 
             variants={itemVariants}
-            className="text-xl sm:text-2xl md:text-3.5xl font-bold text-slate-700 dark:text-slate-200 mt-4 tracking-wide"
+            className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-200 mt-4 tracking-wide min-h-[40px] flex items-center justify-center gap-1.5"
           >
-            {personalInfo.role}
+            <span>I am a</span>
+            <span className="text-blue-600 dark:text-blue-400 border-r-2 border-blue-600 dark:border-blue-400 pr-1 animate-caret">
+              {currentText}
+            </span>
           </motion.h2>
 
           {/* Short Bio */}

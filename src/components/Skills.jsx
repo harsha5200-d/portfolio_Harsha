@@ -1,6 +1,72 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { skillsData } from '../data/portfolioData';
+import { 
+  FaJava, 
+  FaPython, 
+  FaJs, 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaReact, 
+  FaNodeJs, 
+  FaDatabase, 
+  FaGitAlt, 
+  FaCode,
+  FaTerminal
+} from 'react-icons/fa';
+import { 
+  SiCplusplus, 
+  SiTailwindcss, 
+  SiExpress, 
+  SiFlask, 
+  SiDjango, 
+  SiMysql, 
+  SiMongodb, 
+  SiPostman, 
+  SiJupyter,
+  SiC,
+  SiIntellijidea
+} from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
+
+const skillIcons = {
+  // Programming Languages
+  "Java": <FaJava className="text-orange-600 dark:text-orange-500" />,
+  "Python": <FaPython className="text-blue-500" />,
+  "C": <SiC className="text-sky-650" />,
+  "C++": <SiCplusplus className="text-blue-600" />,
+  "JavaScript": <FaJs className="text-yellow-500" />,
+  "SQL": <FaDatabase className="text-emerald-500" />,
+  
+  // Frontend
+  "HTML5": <FaHtml5 className="text-orange-500" />,
+  "CSS3": <FaCss3Alt className="text-blue-500" />,
+  "React.js": <FaReact className="text-cyan-400" />,
+  "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
+  
+  // Backend & Frameworks
+  "Node.js": <FaNodeJs className="text-emerald-550" />,
+  "Express.js": <SiExpress className="text-slate-800 dark:text-slate-200" />,
+  "Flask": <SiFlask className="text-slate-850 dark:text-slate-200" />,
+  "Django": <SiDjango className="text-green-800 dark:text-green-600" />,
+  "REST APIs": <TbApi className="text-indigo-500" />,
+  
+  // Databases & ORM
+  "MySQL": <SiMysql className="text-blue-500" />,
+  "MongoDB": <SiMongodb className="text-green-555" />,
+  "SQLAlchemy": <FaDatabase className="text-red-500" />,
+  "Mongoose": <SiMongodb className="text-emerald-600 dark:text-emerald-550" />,
+  
+  // Tools & Platforms
+  "Git & GitHub": <FaGitAlt className="text-orange-600" />,
+  "VS Code / IntelliJ": <SiIntellijidea className="text-sky-500" />,
+  "Postman": <SiPostman className="text-orange-500" />,
+  "Jupyter Notebook": <SiJupyter className="text-orange-600" />
+};
+
+const getSkillIcon = (name) => {
+  return skillIcons[name] || <FaCode className="text-blue-500" />;
+};
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState('All');
@@ -99,28 +165,24 @@ const Skills = () => {
                       </span>
                     </h3>
 
-                    {/* Category Skills */}
-                    <div className="space-y-4 flex-grow">
-                      {catGroup.skills.map((skill, skillIdx) => (
-                        <div key={skillIdx} className="space-y-1.5">
-                          <div className="flex justify-between items-center text-xs font-semibold">
-                            <span className="text-slate-700 dark:text-slate-300">{skill.name}</span>
-                            <span className="text-slate-500 dark:text-slate-450">{skill.level}%</span>
+                    {/* Category Skills Grid */}
+                    <div className="grid grid-cols-2 gap-3 flex-grow mt-2">
+                      {catGroup.skills.map((skill, skillIdx) => {
+                        const isLastOdd = catGroup.skills.length % 2 !== 0 && skillIdx === catGroup.skills.length - 1;
+                        return (
+                          <div 
+                            key={skillIdx} 
+                            className={`flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-850 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-all duration-300 hover:shadow-sm group/skill cursor-default ${isLastOdd ? 'col-span-2' : ''}`}
+                          >
+                            <span className="text-xl shrink-0 group-hover/skill:scale-110 transition-transform duration-300">
+                              {getSkillIcon(skill.name)}
+                            </span>
+                            <span className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-350 group-hover/skill:text-blue-600 dark:group-hover/skill:text-blue-400 transition-colors">
+                              {skill.name}
+                            </span>
                           </div>
-                          
-                          {/* Progress bar container */}
-                          <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                            {/* Animated progress fill */}
-                            <motion.div
-                              initial={{ width: 0 }}
-                              whileInView={{ width: `${skill.level}%` }}
-                              viewport={{ once: true }}
-                              transition={{ duration: 1, ease: 'easeOut', delay: 0.1 }}
-                              className="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"
-                            />
-                          </div>
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </motion.div>
                 ))}

@@ -33,7 +33,7 @@ const ResumePage = () => {
         {/* Name and Header Info */}
         <div className="text-center pb-6 border-b-2 border-slate-900 dark:border-slate-800 print:border-slate-900">
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white print:text-black print:text-3xl print:font-bold">
-            Harsha vardhan Reshavena
+            {personalInfo.name}
           </h1>
           <p className="text-sm md:text-base font-semibold text-slate-650 dark:text-slate-350 italic mt-1.5 print:text-slate-700 print:text-xs">
             B.Tech 4th-year student

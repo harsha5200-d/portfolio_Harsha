@@ -150,7 +150,7 @@ const CodingProfiles = () => {
               </div>
 
               {/* Arrow link */}
-              <span className="p-2 rounded-lg bg-slate-400 dark:bg-slate-850 text-slate-450 group-hover:text-blue-400 dark:group-hover:text-blue-400 transition-colors">
+              <span className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 <FaExternalLinkAlt className="text-[11px]" />
               </span>
             </motion.a>

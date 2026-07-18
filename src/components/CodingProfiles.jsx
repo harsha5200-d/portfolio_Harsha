@@ -7,7 +7,7 @@ const CodingProfiles = () => {
   const profiles = [
     {
       name: "LeetCode",
-      metric: "110+ Solved",
+      metric: "120+ Solved",
       color: "from-amber-1000 to-orange-600",
       link: personalInfo.socials.leetcode,
       icon: (
